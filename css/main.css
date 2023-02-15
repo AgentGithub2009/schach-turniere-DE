@@ -1,44 +1,14 @@
 body {
     font-family: sans-serif;
+    background-color: lightgray;
 }
 
 
 .Heading {
-    color: blue;
+    color: darkgray;
     width: fit-content;
     padding: 5px;
     
-    text-decoration-line: underline;
-    text-underline-offset: 8px;
-}
-
-
-#taskHeadline {
-    color: red;
-    padding-left: 2px;
-    padding-bottom: 5px;
-
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-}
-
-
-#submitButton {
-    background-color: green;
-    width: fit-content;
-    padding: 4px;
-    margin-top: 10px;
-
-    user-select: none;
-}
-
-#submitButton:hover {
-    cursor: pointer;
-    filter: brightness(130%);
-}
-
-#submitButton:active {
-    filter: none;
+    /* text-decoration-line: underline;
+    text-underline-offset: 8px; */
 }
