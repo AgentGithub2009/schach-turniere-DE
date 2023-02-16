@@ -9,12 +9,37 @@
     <script src='lib/jquery.js'></script>
     <script src='js/Main.js'></script>
 </head>
+
+<style>
+    body{
+        background-image: url("https://cdn.discordapp.com/attachments/919621805243785266/1075496854944501780/Titelbild.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+</style>
+
 <body>
-    <h1 class="Heading"> <img src="./img/springer.jpg" alt="" width="40" height="60"> chach-Turniere-DE</h1>
+    <div id="HeadingScreen">
+        <div id="HeadingRectangle"> 
+            <h1 id="Title"> <img src="./img/springer.jpg" width="40" height="60">chach-Turniere-DE</h1>
+        </div>
+    </div>
 
-    <div style="color: green;"> PLAY on <a href="https://www.chess.com">chess.com</a></div>
+    <div id="MainScreen">
 
-    <div>class </div>
-    
+        <div id="PlayChessLink"> Play <a href="https://www.chess.com"> Chess </a></div>
+
+        <div id="AboutUs"> <a href="./aboutUs.html"> Über uns </a></div>
+
+        <div class="dropdown">
+            <button id="Tournaments" class="dropButton"> Turniere </button>
+
+            <div class="dropdown-content">
+                <a href="./comingTournaments.html"> anstehende Turniere </a>
+                <a href="./pastTournaments.html"> vergangene Turniere </a>
+                <a href="./createTournament.html"> Turnier erstellen</a>
+            </div>
+          </div>
+    </div>
 </body>
 </html>
