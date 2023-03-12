@@ -1,31 +1,56 @@
+    /* Fonts */
+/* Quantic-Regular */
 @font-face {
-    font-family: Quantico;
+    font-family: Quantico-Regular;
     src: url("../fonts/Quantico-Regular.ttf");
 }
 
+/* Quantico-Bold */
+@font-face {
+    font-family: Quantico-Bold;
+    src: url("../fonts/Quantico-Bold.ttf");
+}
 
-.body {
-    font-family: sans-serif;
-    background-color: lightgray;
+/* Simplifica */
+@font-face{
+    font-family: Simplifica;
+    src: url(../fonts/SIMPLIFICA.ttf);
+}
+
+/* Mosk-ExtraBold */
+@font-face{
+    font-family: Mosk-ExtraBold;
+    src: url("../fonts/Mosk\ Extra-Bold\ 800.ttf");
+}
+
+/* Overpass */
+@font-face {
+    font-family: Overpass;
+    src: url("../fonts/overpass-extrabold.otf");
 }
 
 
-#Title {
-    color: darkgrey;
-    width: fit-content;
+    /* body */
+    
+.body { 
+    font-family: sans-serif; 
+}
+
+    /* heading screen */
+    
+#title { 
+    color: darkgrey; 
+    width: fit-content; 
+
+    font-family: Quantico-Regular;
     font-size: 50px;
 
     padding-left: 5px;
-    padding-top: 15px;
-    
+    padding-top: 15px; 
     margin: 0;
 }
 
-#HeadingScreen{
-    font-family: Quantico;
-}
-
-#HeadingRectangle{
+#headingRectangle{
     background-color: white;
 
     border: solid;
@@ -37,36 +62,24 @@
     padding-top: 1px;
     padding-left: 10px;
     
-    width: auto;
+    width: 1864px;
     height: 90px;
 }
 
+#myAccountButton{
+    position: absolute;
+    top: 50px;
+    right: 40px;
 
-#Tournaments{
-    color: rgb(56, 92, 104);
+    background-color: #4CAF50;
 
-    border: solid;
-    border-width: 2px;
-
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-
-    right: 360px;
-
-    width: fit-content;
-    height: 50px;
-
-    text-align: right;
-
-    background-color: #ffffffdd;
-    padding: 16px;
-    font-size: 16px;
+    border-style: ridge;
+    border-color: black;
 }
 
-#PlayChessLink{
+    /* main screen */
+/* Buttons/Links */
+#playChessLink{
     color: rgb(56, 92, 104);
 
     border: solid;
@@ -92,7 +105,7 @@
     font-size: 16px;
 }
 
-#AboutUs{
+#aboutUs{
     color: rgb(56, 92, 104);
 
     border: solid;
@@ -118,14 +131,40 @@
     font-size: 16px;
 }
 
+#tournamentsButton{
+    font-family: Quantico-Bold;
+    font-size: x-large;
 
-.dropButton {
-    background-color: #ffffffdd;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
+    background: none;
 }
+
+.accountButton{
+    position: absolute;
+
+    border-style: ridge;
+    border-radius: 10px;
+    
+    padding: 10px 20px;
+    margin: 4px 2px;
+    
+    color: white;
+    font-size: 16px;
+    font-family: Quantico-Regular;
+
+    cursor: pointer;
+}
+
+#loginButton:hover{
+    color:  rgb(215, 215, 215);
+    border-color: grey;
+    background-color: #3e8e41!important;
+}
+
+#signUpButton:hover{
+    color: grey;
+    border-color: grey;
+}
+
 
 .dropdown {
     position: relative;
@@ -157,6 +196,6 @@
     display: block;
 }
 
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.dropdown:hover .dropButton {
+
 }
