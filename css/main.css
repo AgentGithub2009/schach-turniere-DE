@@ -134,8 +134,10 @@
 #tournamentsButton{
     font-family: Quantico-Bold;
     font-size: x-large;
+    color: rgb(235, 235, 235);
 
     background: none;
+    border: none;
 }
 
 .accountButton{
